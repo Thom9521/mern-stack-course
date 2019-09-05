@@ -42,7 +42,7 @@ const ProfileSchema = new mongoose.Schema({
         type: String
       },
       from: {
-        type: String,
+        type: Date,
         required: true
       },
       to: {
@@ -106,7 +106,7 @@ const ProfileSchema = new mongoose.Schema({
   },
   date: {
     type: Date,
-    defailt: Date.now
+    default: Date.now
   }
 });
 
